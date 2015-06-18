@@ -1,0 +1,13 @@
+<h4>Reviews</h4>
+<div class="btn btn-primary left-button">{{#link-to "reviews.new"}}Create Review{{/link-to}}</div>
+<ul>
+  {{#each review in model}}
+    <li>
+      {{#link-to 'review' review}}
+        {{review.title}}, by user{{review.userId}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No reviews found.</li>
+  {{/each}}
+</ul>

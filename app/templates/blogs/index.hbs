@@ -1,0 +1,14 @@
+<h4>Blogs</h4>
+<div class="btn btn-primary left-button">{{#link-to "blogs.new"}}Create Blog{{/link-to}}</div>
+<ul>
+  {{#each blog in model}}
+    <li>
+      {{#link-to 'blog' blog}}
+        {{blog.title}}, by user{{blog.userId}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No blogs found.</li>
+  {{/each}}
+</ul>
+

@@ -1,0 +1,11 @@
+<ul>
+  {{#each activity in model}}
+    <li>
+      {{#link-to 'activity' activity}}
+        User {{activity.userId}} {{activity.action}}d {{activity.trackableType}} at {{activity.createdAt}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No activities found.</li>
+  {{/each}}
+</ul>

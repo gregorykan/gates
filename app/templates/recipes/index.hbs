@@ -1,0 +1,13 @@
+<h4>Recipes</h4>
+<div class="btn btn-primary left-button">{{#link-to "recipes.new"}}Create Recipe{{/link-to}}</div>
+<ul>
+  {{#each recipe in model}}
+    <li>
+      {{#link-to 'recipe' recipe}}
+        {{recipe.title}}, by user{{recipe.userId}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No recipes found.</li>
+  {{/each}}
+</ul>

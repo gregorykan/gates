@@ -1,0 +1,144 @@
+body {
+  padding-top: 60px;
+}
+@media {max-width: 979px} {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.activity-stream ul {
+  list-style-type: none;
+}
+
+.activity-stream li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-left: 4px solid green;
+}
+
+.outlet {
+  position: relative;
+}
+
+.outlet ul {
+  list-style-type: none;
+}
+
+.outlet li {
+  padding: 10px;
+}
+
+.text {
+  margin-left: 40px;
+}
+
+.time {
+  margin-left: 40px;
+  font-size: x-small;
+}
+
+input {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 400px;
+}
+
+.input-text {
+  width: 40%;
+  margin-left: 40px;
+  height: 400px;
+}
+
+.left-button {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.left-button a {
+  color: #fff;
+}
+
+.outlet a:hover {
+  color: black;
+}
+
+h4 {
+  margin-left: 40px;
+}
+
+.edit-textarea {
+  width: 40%;
+  margin-left: 40px;
+  height: 400px;
+}
+
+.save-button {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+/*html, body {
+  font-family: 'Verdana';
+  margin: 0;
+  padding: 0;
+}
+
+#topbar {
+  height: 40px;
+  background-color: #4FC3F7;
+  padding: 10px;
+}
+
+#sidebar {
+    width:20%;
+    float:right;
+    background-color:#4FC3F7;
+    color: white;
+    height: 100%;
+}
+
+#container {
+  width: 70%;
+  float:left;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+}
+
+/* unvisited link
+a:link {
+    color: #000;
+}
+
+/* visited link */
+/*a:visited {
+    color: #000;
+}*/
+
+/* mouse over link */
+/*a:hover {
+    color: #FFF;
+}*/
+
+/* selected link */
+/*a:active {
+    color: #000;
+    text-decoration: none;
+}*/
+
+/*h4 {
+  margin-left: 40px;
+}*/*/*/

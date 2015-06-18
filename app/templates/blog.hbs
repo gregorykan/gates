@@ -1,0 +1,15 @@
+<h4>{{model.title}} by user {{model.userId}}</h4>
+{{#if isEditing}}
+<form {{action 'saveBlog' on="submit"}}>
+{{textarea class="edit-textarea" value=model.text placeholder="Text"}}<br/><br/>
+<button type="submit" class="btn btn-primary save-button">Save</button>
+</form>
+{{else}}
+<p {{action "editBlog" on="doubleClick"}} class="text"> {{model.text}}</p>
+{{/if}}
+<p class="time">
+  Updated: {{model.updatedAt}}
+  <br>
+  Created: {{model.createdAt}}
+</p>
+<button {{action "removeBlog"}} class="destroy btn btn-primary left-button">Delete</button>
