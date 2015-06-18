@@ -16,14 +16,14 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    apiHost: 'http://localhost:3000'
+    apiHost: 'https://warm-citadel-2092.herokuapp.com'
   };
 
   ENV.contentSecurityPolicy = {
   'default-src': "'none'",
-  'script-src': "'self' http://localhost:3000",
+  'script-src': "'self' https://warm-citadel-2092.herokuapp.com",
   'font-src': "'self'",
-  'connect-src': "'self' http://localhost:3000",
+  'connect-src': "'self' https://warm-citadel-2092.herokuapp.com",
   'img-src': "'self'",
   'style-src': "'self'",
   'media-src': "'self'"
